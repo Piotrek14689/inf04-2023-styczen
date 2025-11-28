@@ -2,6 +2,13 @@
 
 using namespace std;
 
+/**********************************************
+nazwa funkcji: nwd
+opis funkcji: wyznacza nwd dwoch liczb calkowitych dodatnich
+parametry: a - pierwsza liczba b - druga liczba
+zwracany typ i opis: int, zwracany jest najwiekszy wspolny dzielnik dwoch liczb.
+autor: <numer zdajacego>
+***********************************************/
 int nwd(unsigned int a, unsigned int b)
 {
     while(a!=b)
