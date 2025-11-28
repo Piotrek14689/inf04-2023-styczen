@@ -1,0 +1,10 @@
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\bin\Debug\desktopowa.exe.config
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\bin\Debug\desktopowa.exe
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\bin\Debug\desktopowa.pdb
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.csproj.AssemblyReference.cache
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.Form1.resources
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.Properties.Resources.resources
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.csproj.GenerateResource.cache
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.csproj.CoreCompileInputs.cache
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.exe
+C:\Users\piotr\Desktop\inf04 2023 styczen zad 01\desktopowa\desktopowa\obj\Debug\desktopowa.pdb
