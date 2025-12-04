@@ -41,7 +41,7 @@ namespace desktopowa
         private void button1_Click(object sender, EventArgs e)
         {
             haslo = string.Empty;
-            int iloscZnakow = int.Parse(textBox3.Text);
+            int iloscZnakow = int.Parse(numericUpDown1.Text);
             string maleLitery = "abcdefghijklmnopqrstuvwxyz";
             string duzeLitery = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             string liczby = "0123456789";
@@ -49,20 +49,44 @@ namespace desktopowa
             
 
             Random generator = new Random();
-            
+
+            bool czyMaleLitery = checkBox4.Checked;
             bool czyDuzeLitery = checkBox1.Checked;
             bool czyCyfry = checkBox2.Checked;
             bool czyZnakiSpecjalne = checkBox3.Checked;
-            int flag = 0;
+            int flag;
+
+
+            if(!czyMaleLitery && !czyDuzeLitery && !czyCyfry && !czyZnakiSpecjalne)
+            {
+                MessageBox.Show("Zaznacz przynajmniej jedną opcję.");
+                return;
+            }
+
+            if(iloscZnakow<=0)
+            {
+                MessageBox.Show("Liczba znaków musi być większa od 0.");
+                return;
+            }
+
+
             for (int i = 0; i < iloscZnakow; i++)
             {
+                flag = generator.Next(0, 5);
                 switch (flag)
                 {
                     case 0:
                         {
-                            int liczba = generator.Next(maleLitery.Length);
-                            haslo += maleLitery[liczba];
-                            flag = 1;
+                            if (czyMaleLitery)
+                            {
+                                int liczba = generator.Next(maleLitery.Length);
+                                haslo += maleLitery[liczba];
+
+                            }
+                            else
+                            {
+                                i--;
+                            }
                             break;
                         }
                     case 1:
@@ -76,7 +100,6 @@ namespace desktopowa
                             {
                                 i--;
                             }   
-                            flag = 2;
                             break;
                         }
                     case 2:
@@ -90,7 +113,6 @@ namespace desktopowa
                             {
                                 i--;
                             }
-                            flag = 3;
                             break;
                         }
                     case 3:
@@ -104,7 +126,6 @@ namespace desktopowa
                             {
                                 i--;
                             }
-                            flag = 0;
                             break;
                         }
 
